@@ -1,1 +1,0 @@
-Dette er en test, se bort i fra denne. - Tor Ole - 
