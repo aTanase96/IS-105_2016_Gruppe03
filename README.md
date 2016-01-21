@@ -6,4 +6,6 @@ Jeg har nå lagt 3 python filer/prosjekter. Den Stein:Saks:Papir.py skal brukes 
 
 Heisann nnå prøver jeg
 
-F�kk deg Andrei
+F�kk deg Andrei
+
+Føkk deg og Tor Ole :) 
