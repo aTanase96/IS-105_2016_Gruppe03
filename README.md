@@ -1,3 +1,4 @@
-# IS-105_2016_Gruppe03
-Da har jeg redigert noe, wooo.... Jeg skjÃ¸nner noe :D
-Hei, funker det?
+I denne mappen ligger  (foreløpig) følgende filer:
+1: Readme.md
+2. plussFunksjon.py
+
