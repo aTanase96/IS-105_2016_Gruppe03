@@ -462,4 +462,3 @@ def evaluateHand(self):
         return "Pair of 2's"
     else:
         return "Nothing"
-    raw_input()
