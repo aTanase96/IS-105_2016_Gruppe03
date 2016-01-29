@@ -38,6 +38,7 @@ def main():
         
     else:
         print("Error, not valid input")
+    print "Trykk enter"
     raw_input()
     main()
     
