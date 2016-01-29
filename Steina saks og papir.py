@@ -1,38 +1,47 @@
-
-
 def main():
-    from random import randint
-    brukervalgene = input("stein" or "saks" or papir)
-    if brukervalgene == "stein":
-        brukervalg = 1
-    elif brukervalgene == "papir":
-        brukervalg = 2
-    elif brukervalgene == "saks":
-        brukervalg = 3
-    CpuChoice = randint(1,3) 
-    if brukervalg == CpuChoice:
-        print("DRAW!")
-    elif brukervalg == 1 and CpuChoice== 3:
-        print("Rock beats scissors PLAYER WINS!")
-        main()
-    elif brukervalg == 3 and CpuChoice== 1:
-        print("Rock beats scissors CPU WINS")
-        main()
-    elif brukervalg == 1 and CpuChoice== 2:
-        print("Paper beats rock CPU WINS!")
-        main()
-    elif brukervalg == 2 and CpuChoice== 1:
-        print("paper beats rock PLAYER WINS!")
-        main()
-    elif brukervalg == 2 and CpuChoice== 3:
-        print("Scissors beats paper CPU WINS!")
-        main()
-    elif brukervalg == 3 and CpuChoice== 2:
-        print("Scissors beats paper PLAYER WINS!")
-        main()
-    elif brukervalg == 1 and CpuChoice== 2:
-        print("cpu wins")
-        main()
+    import random
+    print ("velkommen til stein, saks og papir. Venligst velg enten stein, saks eller papir")
+    userinput = input("stein" or "saks" or "papir")    
+    if userinput == "stein":
+        userinput = stein
+    elif userinput == "saks":
+        userinput == saks
+    elif userinput == "papir":
+        userinput = papir
+        
+    print ("you chose ", userinput())
+    raw_input()
+    s = ("stein","saks","papir")
+    cpuchoice = s.split(",")
+    
+    if cpuchoice == "stein" and userinput == stein:
+        print("Uavgjort!")
+        
+    elif cpuchoice == "saks" and userinput == saks:
+        print("Uavgjort!")
+        
+    elif cpuchoice == "papir" and userinput == papir:
+        print("Uavgjort!")
+        
+    elif cpuchoice == "stein" and userinput == saks:
+        print("cpu vinner!")
+        
+    elif cpuchoice == "stein" and userinput == papir:
+        print("du vinner!")
+        
+    elif cpuchoice == "saks" and userinput == stein:
+        print("du vinner!")
+        
+    elif cpuchoice == "saks" and userinput == papir:
+        print("cpu vinner!")
+        
+    elif cpuchoice == "papir" and userinput == stein:
+        print("cpu vinner!")
+        
+    elif cpuchoice == "papir" and userinput == saks:
+        print("du vinner!")
+        
     else:
-        print("Error: outcome not implemented")
+        print("Error, bugs?")
+    raw_input()
 main()
