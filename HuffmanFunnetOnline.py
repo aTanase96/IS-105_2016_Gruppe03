@@ -31,7 +31,7 @@ freq = [
     (1.974, 'y'), (0.074, 'z') ]
 
 def encode(frequencies):
-    p = queue.PriorityQueue()
+    p = Queue.PriorityQueue()
     for item in frequencies:
         p.put(item)
 
