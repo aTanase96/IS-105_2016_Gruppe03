@@ -3,6 +3,7 @@ class HuffmanNode(object):
     def __init__(self,left = None, right = None):
         self.left = left
         self.right = right
+        #Creating the objects
     def children(self):
         return(self.left,self.right)
     def order(self,direction = None):
@@ -17,7 +18,7 @@ class HuffmanNode(object):
             if isinstance(self.right[1], HuffmanNode):
                 self.right[1].order(direction+[0])
             else:
-                print(self.right + direction+[0])
+                print self.right + direction+[0]
 freq = [
     (), 
     ]
