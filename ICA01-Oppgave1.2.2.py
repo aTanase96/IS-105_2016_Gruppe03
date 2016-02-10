@@ -1,31 +1,29 @@
-def code():
+
+def code(input):
     
-    table = {}
-    table[1] = "X"
-    table[2] = "Y"
-    table[3] = "Z"
-    return table
+    x = 0
 
-textfile = open('BS.txt', "r")
-textinput = ""
+    output = ""
 
+    while x < len(input):
+        if input[x]=="0":
+            output += "x"
+            
+        elif input[x]=="1" and input[x + 1]=="0":
+            output += "y"
+            x += 1
+            
+        elif input[x]=="1" and input[x + 1]=="1":
+            output += "z"
+            x += 1
+            
+        x += 1
+        
+    return output
+            
+            
+print code("00101001100000")
 
-for x in textfile:
-    textinput += str(x)
-    
-x = 0
-
-counter = 0
-
-temp = ""
-
-output = ""
-
-while counter < len(textfile):
-    if x < 14:
-        temp += textinput[counter]
-        x += 1 
-    
     
     
     
