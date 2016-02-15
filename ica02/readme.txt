@@ -1,0 +1,1 @@
+I denne mappen ligger ukesbesvarelsene for ICA 02. Se Excel doukument for utregninger. Huffman kode-treet ligger som egen JPEG fil (fakultetHuffman). 
