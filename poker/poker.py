@@ -6,7 +6,7 @@ def allmax(iterable, key=None):
     "return a list of all items equal to the max of the iterable"
     result, maxval = [], None
     key = key or (lambda x: x)
-    for x in iterable
+    for x in iterable:
         xval = key(x)
         if not result or xval > maxval:
             result, maxva = [x], xval
@@ -78,8 +78,8 @@ def test():
     tp = "5S 5D 9H 9C 6S".split()
     fkranks = card_ranks(fk)
     tpranks = card_ranks(tp)
-    assert kind(4, fkranks) == 9 # Askinf for exact numbers - yes there is 4 of one
-    assert kind(3, frkanks) == None
+    assert kind(4, fkranks) == 9 # Asking for exact numbers - yes there is 4 of one
+    assert kind(3, fkranks) == None
     assert kind(2, fkranks) == None
     assert kind(1, fkranks) == 7 # Again, asking for exact, and there is one seven in the hand
     assert two_pair(fkranks) == None
