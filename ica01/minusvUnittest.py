@@ -1,5 +1,5 @@
 import unittest # Importerer test bibliotek
-from Minusv4 import minus # Henter forst filen (plussfunksjon) og henter saa metoden (pluss)
+from Minusv4 import minus # Henter forst filen (Minusv4) og henter saa metoden (minus)
 
 class TestMinus(unittest.TestCase): # Oppretter en testklasse og intialiserer nodvendige verdier
     def setUp(self):

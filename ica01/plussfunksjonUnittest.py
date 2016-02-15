@@ -1,8 +1,11 @@
 import unittest # Importerer test bibliotek
-from plussfunksjon import plussFunksjon # Henter forst filen (plussfunksjon) og henter saa metoden (plussFunksjon)
+from plussFunksjon import pluss # Henter forst filen (plussFunksjon) og henter saa metoden (pluss)
 
-class plussTest(unittest.TestCase):
-    def test(self):
-        self.assertEqual(plussFunksjon(4,8), 12) # Skal sjekke hvorvidt resultatet stemmer 
+class TestMinus(unittest.TestCase): # Oppretter en testklasse og intialiserer nodvendige verdier
+    def setUp(self):
+        pass
+    def test_numbers_6_3(self):
+        self.assertEqual(pluss(6,3), 9) # Skal sjekke hvorvidt resultatet stemmer 
         
-raw_input() # Bruker maa trykke enter for aa lukke program
+if __name__== '__main__':
+    unittest.main()
