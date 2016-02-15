@@ -1,0 +1,1 @@
+I denne mappen ligger ICA 01. Pluss og minusfunksjonene ligger inne som egne filer som også har sine egne unit tester (som også har sine egne filer). Word dokumentet som er lagt ved er besvarelsene på oppgavene knyttet til ICA 01. 
