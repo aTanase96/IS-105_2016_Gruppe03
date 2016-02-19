@@ -1,2 +1,2 @@
-I denne mappen ligger ICA 01. Pluss og minusfunksjonene ligger inne som egne filer som også har sine egne unit tester (som også har sine egne filer). Word dokumentet som er lagt ved er besvarelsene på oppgavene knyttet til ICA 01.
-Filen "ICA01Oppgave" er dekodingsprogrammet knyttet til oppgave 1.2.2 C. 
+I denne mappen ligger ICA 01. Pluss og minusfunksjonene ligger inne som egne filer som ogsï¿½ har sine egne unit tester (som ogsï¿½ har sine egne filer). Word dokumentet som er lagt ved er besvarelsene pï¿½ oppgavene knyttet til ICA 01.
+Filen "ICA01Oppgave" er dekodingsprogrammet knyttet til oppgave 1.2.2 C..

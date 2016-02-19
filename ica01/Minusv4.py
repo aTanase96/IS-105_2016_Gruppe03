@@ -5,6 +5,8 @@ number2 = (input("Second Number "))
 
 def minus(number1, number2):
     return number1 - number2
-    
-print "Press enter to close this window"    
-raw_input() 
+
+print "Press enter to close this window"
+raw_input()
+
+#end

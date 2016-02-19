@@ -5,7 +5,9 @@ class TestMinus(unittest.TestCase): # Oppretter en testklasse og intialiserer no
     def setUp(self):
         pass
     def test_numbers_6_3(self):
-        self.assertEqual(minus(6,3), 3) # Skal sjekke hvorvidt resultatet stemmer 
-        
+        self.assertEqual(minus(6,3), 3) # Skal sjekke hvorvidt resultatet stemmer
+
 if __name__== '__main__':
     unittest.main()
+
+    #end
