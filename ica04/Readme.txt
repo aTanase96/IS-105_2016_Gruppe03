@@ -1,0 +1,1 @@
+This folder is the tasks releated to ICA04. It both contains an working speech to text (aswell as the other way around) aswell as the repport for natural language.
