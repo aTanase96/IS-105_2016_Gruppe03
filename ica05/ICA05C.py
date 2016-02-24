@@ -1,6 +1,7 @@
 import timeit, functools
 
 list = ["Martin", "Tor Ole", "Per-otto", "Tomas", "Andrei"]
+# en kommentar
 
 def search_fast(haystack, needle):
     for item in haystack:
