@@ -1,20 +1,11 @@
-import unittest
-from encrdecrprog import encryption
-import random
-from encrdecrprog import decryption
-from Crypto.Cipher import AES
-class test(unittest.TestCase):
-    def encryption(encryption):
-        initialization_vector = Random.new().read(AES.block_size)
-        cipher = AES.new(settings.secret, AES.MODE_CFB, initialization_vector)
-        return initialization_vector + cipher.encrypt(bytes(encryption.encode('Hexadecimal')))
-    def decryption(decryption):
-        initialization_vector, decryption = decryption[:AES.block_size], crypt[AES.block_size:]
-        cipher = AES.new(settings.secret, AES.MODE_CFB, initialization_vector)
-        return cipher.decryption(decryption)        
-    def test_encrypt(self):
-
-    encryption = utils.encryption("abcdefg")
-    self.assertEquals(encryption)  
-if __name__ == '__main__':
-    unittest.main()
+def main():
+    #unittesting of encrdecrprog
+    userinput3 = raw_input()
+    A = ("".join("{:02x}".format(ord(c)) for c in userinput3))
+    D = (''.join([chr(int(''.join(c), 16)) for c in zip(A[0::2],A[1::2])]))
+    if D == userinput3:
+        print("works")
+    else:
+        print("you dun goofed")
+    dust = raw_input()
+main()
