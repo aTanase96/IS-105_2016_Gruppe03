@@ -33,8 +33,7 @@ def encode(message):       #Encoder fuknsjonen som tar i bruk tabelen og funksjo
 import urllib2
 def test():  #Funksjonen som tester.
     print("write a URL")
-    data = urllib2.urlopen(raw_input("")).read(20000) # leser kun 20000 karakterer
-    data = data.split("\n") # og splitter den opp i linjer
+    data = urllib2.urlopen(raw_input(""))
     #ideen er hentet fra http://stackoverflow.com/questions/1393324/in-python-given-a-url-to-a-text-file-what-is-the-simplest-way-to-read-the-cont
     
     for line in data:

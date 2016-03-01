@@ -8,7 +8,9 @@ def lzma_compression_ratio(test_string):
     bytes_out = test.compress(bytes_in)
     return len(bytes_out)/len(bytes_in)
 
-
-test_string = open('https://www.gutenberg.org/files/51334/51334-0.txt')
-compression_ratio = lzma_compression_ratio(for line in test_string)
+import urllib2
+data = urllib2.urlopen('https://www.gutenberg.org/files/51334/51334-0.txt')
+for line in data:
+    data = new_test_string
+compression_ratio = lzma_compression_ratio(new_test_string)
 print(compression_ratio)
