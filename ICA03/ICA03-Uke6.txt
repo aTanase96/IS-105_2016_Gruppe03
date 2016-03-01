@@ -1,0 +1,39 @@
+ICA-03 Uke 6
+
+Oppgave 1.2.1
+
+a) 	table[1] = 'a'
+	table[2] = 'b'
+	table[3] = 'c'
+	table[4] = 'bc'
+	table[5] = 'cc'
+	table[6] = 'ca'
+	table[7] = 'ac'
+	table[8] = 'cb'
+	table[9] = 'bcc’
+	table[10] = 'ccc’
+	table[11] = 'cccc'
+
+2, 3, 3, 1, 3, 4, 5, 10, 11, 6, 10, 1 =  48 bits
+
+b, c, c, a, c, bc, cc, ccc, cccc, ca, ccc, a
+1, 1, 1, 1, 1, 2, 2, 3, 4, 2, 3, 1, = 28 bits
+
+På dekoding så blir det den forrige som ble dekodet pluss den første fra den som blir dekodet.
+
+c) Går fra 48 bits til 28 bits. Så det blir en komprimeringsgrad på 41,3 %
+
+d) Det er 22 totale symboler i teksten.
+Hvorav sannsynligheten for forekomst er, basert på de tre forskjellige symbolene a, b, c.
+Forekomst av a : 3/22 = 0.136 = 13.6%
+Forekomst av b : 2/22 = 0.09 = 9%
+Forekomst av c : 17/22 = 0.772 = 77.2%
+
+Huffman koden;
+c = 1
+a = 10
+b = 101
+Den opprinnelige koden kodet om til Huffman code.
+101, 1, 1, 10, 1, 1011, 11, 111, 1111, 110, 111, 10 = 26 bits
+
+Komprimerings graden er på 58.33%. 
