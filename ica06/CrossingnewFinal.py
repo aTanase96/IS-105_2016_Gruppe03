@@ -3,17 +3,20 @@ A man is trying to bring a fox, a bag of grain and a chicken across a rivercross
 if the man leaves the chicken with the grain, it will eat the grain. However, leaving the chicken with the fox will mean the end of the chicken
 """
 
-# Solution snatched from the web:
-#
-# The farmer brings the goat to the right side then comes back alone.
-# He then takes the cabbage to the right side and brings the goat back to the left.
-# He now takes the wolf to the right side and comes back alone and then
-# finally takes the goat back.
+# Løsningen:
+#Mannen tar med seg kyllingen over
+#Han drar deretter tilbake alene og henter kornet
+#Deretter blir kornet byttet med kyllingen. 
+#Han drar så tilbake og bytter kyllingen med reven
+#Etter han lar reven gå på den andre siden så drar han tilbake alene og henter kyllingen
+#Alle er dermed på den andre siden.
 
 
 
-man,chicken,grain,fox=("man","chicken","grain","fox")
-carryables=(chicken,grain,fox,None)
+man,chicken,grain,fox=("man","chicken","grain","fox") #Her definerer vi kondisjonalene, man er lik "man"
+
+carryables=(chicken,grain,fox,None) #Dette kan båten ta med seg.
+
 
 # Disse kombinasjonene kan ikke skje uten hjelp
 forbiddens=(set((chicken,grain)), set((fox,chicken)))
@@ -24,8 +27,8 @@ def mayhem(cfg):
         if man not in shore:
             for forbidden in forbiddens:
                 if shore.issuperset(forbidden):
-                    return True
-    return False
+                    return True #Hvis den får true så vil setningen senere bli skjilt ut og skjult.
+    return False #Med å få false så vil setningen som blir printa gå videre
 
 # Returnerer true hvis det går bra å ta fra den ene siden til den andre
 def done(cfg):
