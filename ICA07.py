@@ -1,5 +1,5 @@
 
-import shelve, time, sys,
+import shelve, time, sys, os
 
 class File(object):
 
